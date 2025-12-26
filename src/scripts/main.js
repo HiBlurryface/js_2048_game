@@ -8,7 +8,7 @@ const loseMessage = document.querySelector('.message-lose');
 const cells = [...document.querySelectorAll('.field-cell')];
 
 const Game = require('../modules/Game.class');
-const game = new Game()
+const game = new Game();
 
 game.onChange((board, score, gameStatus) => {
   cells.forEach((cell, i) => {
